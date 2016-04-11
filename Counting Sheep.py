@@ -5,7 +5,6 @@ def CountingSheep():
 
     for k in range(1, T+1):
         myset = set()
-        mylist = []
         j= 2
         breaking = 0
         N = int(f.readline())
@@ -14,7 +13,6 @@ def CountingSheep():
             if N == 0: print >>f2,  "Case #"+str(k)+": INSOMNIA";break
             for i in str(N2):
                 if i not in myset:
-                    mylist.append(i)
                     myset.add(i)
                     if len(myset) == 10:print >>f2, "Case #" + str(k) + ": " + str(N2);breaking=1;break
             if breaking == 1: break
